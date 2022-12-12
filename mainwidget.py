@@ -7,7 +7,6 @@ class MainWidget(QWidget):
         self.setWindowTitle("MainWidget")
         browse_button = QPushButton("Browse")
         rename_button = QPushButton("Rename")
-        #self.prefix = "DIC"
         browse_button.clicked.connect(self.button1_clicked)
         rename_button.clicked.connect(self.rename_images)
         
