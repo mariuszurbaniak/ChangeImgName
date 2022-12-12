@@ -1,12 +1,13 @@
-from PySide6.QtWidgets import QApplication
-from mainwidget import MainWidget
+from PySide6.QtWidgets import QApplication, QGraphicsPixmapItem
+from mainwidget import MainWindow
 import sys
 
+if __name__ == "__main__":
+    
+    app = QApplication(sys.argv)
 
-app = QApplication(sys.argv)
+    window = MainWindow()
 
-window = MainWidget()
+    window.show()
 
-window.show()
-
-app.exec()
+    app.exec()

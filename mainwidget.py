@@ -1,5 +1,12 @@
-from PySide6.QtWidgets import QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QFileDialog, QLabel, QLineEdit
+from PySide6.QtWidgets import QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QFileDialog, QLabel, QLineEdit, QMainWindow
 import os, exif
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.main_widget = MainWidget()
+        self.setCentralWidget(self.main_widget)
+            
 
 class MainWidget(QWidget):
     def __init__(self):
