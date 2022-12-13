@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication, QGraphicsPixmapItem
+from PySide6.QtWidgets import QApplication
 from mainwidget import MainWindow
 import sys
 
@@ -9,5 +9,5 @@ if __name__ == "__main__":
     window = MainWindow()
 
     window.show()
-
+    
     app.exec()
